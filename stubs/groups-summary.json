@@ -1,0 +1,63 @@
+{
+    "data": [
+        {
+            "_id": "0",
+            "type": "Group",
+            "title": "books",
+            "ownerId": "9o733pqKJxqyHoeHq",
+            "accountId": "W4X4PvBfzL59Ysjti",
+            "ownerUsername": "Test test",
+            "directory": {
+                "isGroup": true,
+                "isTemporary": false,
+                "isPersonalLibrary": false,
+                "isOrganisationLibrary": false,
+                "isTrash": false,
+                "childCount": 1
+            },
+            "createdAt": "2018-01-22T15:49:59.107Z",
+            "membersCount": 6,
+            "gemsCount": 16
+        },
+        {
+            "_id": "1",
+            "type": "Group",
+            "title": "test test's ",
+            "ownerId": "9o733pqKJxqyHoeHq",
+            "accountId": "W4X4PvBfzL59Ysjti",
+            "ownerUsername": "Test test",
+            "directory": {
+                "isGroup": true,
+                "isTemporary": false,
+                "isPersonalLibrary": false,
+                "isOrganisationLibrary": false,
+                "isTrash": false,
+                "childCount": 0
+            },
+            "createdAt": "2018-02-02T10:43:51.239Z",
+            "membersCount": 7,
+            "gemsCount": 2
+        },
+        {
+            "_id": "2",
+            "type": "Group",
+            "title": "Organization",
+            "ownerId": "root",
+            "accountId": "W4X4PvBfzL59Ysjti",
+            "directory": {
+                "isOrganisationLibrary": true,
+                "isGroup": true,
+                "isTemporary": false,
+                "isPersonalLibrary": false,
+                "isTrash": false,
+                "childCount": 0,
+                "childCount_old": 1
+            },
+            "ownerUsername": "root",
+            "createdAt": "2016-02-19T08:31:32.998Z",
+            "membersCount": 8,
+            "gemsCount": 241
+        }
+    ],
+    "dataCount": 3
+}
