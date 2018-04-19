@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import Table from "./components/Table/Table";
+import FilterTextField from "./components/FilterTextField/FilterTextField";
 
 class App extends Component {
   constructor(props) {
@@ -10,6 +11,7 @@ class App extends Component {
       searchTerm: "",
       data: []
     };
+    this.handleSearchChange = this.handleSearchChange.bind(this);
   }
   componentDidMount() {
     window
@@ -30,6 +32,11 @@ class App extends Component {
       .catch(err => {
         console.log(err);
       });
+  }
+  handleSearchChange(term) {
+    this.setState({
+      searchTerm: term.toLowerCase()
+    });
   }
   render() {
     const { searchTerm, data } = this.state;
@@ -59,6 +66,7 @@ class App extends Component {
 
     return (
       <div>
+        <FilterTextField onTextChange={this.handleSearchChange} />
         <Table
           data={data.filter(
             row => row.title.toLowerCase().indexOf(searchTerm) !== -1
