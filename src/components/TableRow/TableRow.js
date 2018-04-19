@@ -1,6 +1,15 @@
-import React, { Component } from 'react';
-import './TableRow.css';
+import React, { Component } from "react";
+import "./TableRow.css";
 
-const TableRow = () => <td className="tableCellItem">1</td>
+const TableRow = ({ row }) => {
+  return (
+    <tr>
+      {Object.keys(row).map(key => {
+        const td = row[key];
+        return <td>{td}</td>;
+      })}
+    </tr>
+  );
+};
 
 export default TableRow;
