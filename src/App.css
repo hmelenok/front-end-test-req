@@ -1,3 +1,6 @@
+body {
+  font-family: "Open Sans";
+}
 table {
   width: 100%;
   border-collapse: collapse;
@@ -12,22 +15,56 @@ thead {
 
 th {
   text-align: left;
-  padding: 5px;
+  padding: 10px;
   font-size: 14px;
   font-weight: 600;
   border-bottom: 2px solid lightgray;
   cursor: pointer;
+  color: #bdc1c9;
+  position: relative;
 }
 
 .thActive {
   border-color: tomato;
 }
 
-tr {
-}
-
 td {
-  font-size: 14px;
+  font-size: 16px;
   border: 1px solid lightgray;
   padding: 5px;
+  font-weight: bold;
+}
+#main-title {
+  text-transform: uppercase;
+  font-size: 1em;
+  color: #8a909b;
+}
+i {
+  border: solid lightgray;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  position: absolute;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  bottom: 10px;
+}
+.up,
+.down {
+  right: 7px;
 }

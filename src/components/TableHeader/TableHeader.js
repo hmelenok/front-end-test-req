@@ -17,6 +17,8 @@ const TableHeader = ({ columns, sortColumn, sortAsc, onTableHeaderClick }) => {
             {name}
             {icon && " "}
             {icon}
+            <i class="arrow up" />
+            <i class="arrow down" />
           </th>
         );
       })}

@@ -21,9 +21,10 @@ class FilterTextField extends Component {
           padding: 10
         }}
       >
+        <label style={{ display: "block" }}>Search</label>
         <input
           type="search"
-          placeholder="Search..."
+          placeholder="Title, owner etc."
           onChange={this.handleTextChange}
         />
       </div>

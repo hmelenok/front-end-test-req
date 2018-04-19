@@ -66,6 +66,7 @@ class App extends Component {
 
     return (
       <div>
+        <h1 id="main-title">Manage groups</h1>
         <FilterTextField onTextChange={this.handleSearchChange} />
         <Table
           data={data.filter(
