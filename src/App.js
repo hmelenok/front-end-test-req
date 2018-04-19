@@ -23,7 +23,7 @@ class App extends Component {
           data: data.data.map(group => ({
             title: group.title,
             owner: group.ownerUsername,
-            creationDate: group.createdAt,
+            creationDate: new Date(group.createdAt).toDateString(),
             members: group.membersCount,
             gems: group.gemsCount
           }))
