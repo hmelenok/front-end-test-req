@@ -3,6 +3,9 @@ import logo from "./logo.svg";
 import "./App.css";
 import Table from "./components/Table/Table";
 import FilterTextField from "./components/FilterTextField/FilterTextField";
+import Button from "./components/Button/Button";
+import { Provider } from "react-redux";
+import store from "./store";
 
 class App extends Component {
   constructor(props) {
@@ -65,16 +68,19 @@ class App extends Component {
     ];
 
     return (
-      <div>
-        <h1 id="main-title">Manage groups</h1>
-        <FilterTextField onTextChange={this.handleSearchChange} />
-        <Table
-          data={data.filter(
-            row => row.title.toLowerCase().indexOf(searchTerm) !== -1
-          )}
-          columns={columns}
-        />
-      </div>
+      <Provider store={store}>
+        <div>
+          <h1 id="main-title">Manage groups</h1>
+          <FilterTextField onTextChange={this.handleSearchChange} />
+          <Button />
+          <Table
+            data={data.filter(
+              row => row.title.toLowerCase().indexOf(searchTerm) !== -1
+            )}
+            columns={columns}
+          />
+        </div>
+      </Provider>
     );
   }
 }
