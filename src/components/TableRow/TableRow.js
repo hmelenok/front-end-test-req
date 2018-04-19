@@ -4,9 +4,9 @@ import "./TableRow.css";
 const TableRow = ({ row }) => {
   return (
     <tr>
-      {Object.keys(row).map(key => {
+      {Object.keys(row).map((key, index) => {
         const td = row[key];
-        return <td>{td}</td>;
+        return <td key={index}>{td}</td>;
       })}
     </tr>
   );
