@@ -16,9 +16,9 @@ class App extends Component {
       .fetch("/groups-summary.json")
       .then(res => res.json())
       .then(data => {
-        console.log(data);
+        console.log(data.data);
         this.setState({
-          data: data.map(group => ({
+          data: data.data.map(group => ({
             title: group.title,
             owner: group.ownerUsername,
             creationDate: group.createdAt,
@@ -59,7 +59,12 @@ class App extends Component {
 
     return (
       <div>
-        <Table columns={columns} />
+        <Table
+          data={data.filter(
+            row => row.title.toLowerCase().indexOf(searchTerm) !== -1
+          )}
+          columns={columns}
+        />
       </div>
     );
   }
