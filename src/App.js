@@ -1,16 +1,19 @@
 import React, { Component } from "react";
-import logo from "./logo.svg";
 import "./App.css";
 import Table from "./components/Table/Table";
 import FilterTextField from "./components/FilterTextField/FilterTextField";
 import Button from "./components/Button/Button";
-import HeaderComponent from "./components/HeaderComponent/HeaderComponent";
 import { Provider } from "react-redux";
 import store from "./store";
 import FooterComponent from "./components/FooterComponent/FooterComponent";
 import { fetchGroups } from "./actions/postActions";
 import { connect } from "react-redux";
-
+/*
+-Remove state from components and pass it as initial in reducers
+-Create corresponding actions
+-Connect to store properly
+-Refactor app component as far as it should only display components
+*/
 class App extends Component {
   constructor(props) {
     super(props);
@@ -74,7 +77,13 @@ class App extends Component {
     return (
       <Provider store={store}>
         <div>
-          <HeaderComponent />
+          <div className="top-section">
+            <h1 id="main-title">Manage groups</h1>
+            <div className="wrapper">
+              <FilterTextField onTextChange={this.handleSearchChange} />
+              <Button />
+            </div>
+          </div>
           <Table
             data={data.filter(
               row => row.title.toLowerCase().indexOf(searchTerm) !== -1
