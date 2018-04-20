@@ -1,0 +1,110 @@
+body {
+  font-family: "Open Sans";
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 4px;
+  border: 1px solid lightgray;
+  background-color: white;
+}
+
+thead {
+  border-bottom: 1px solid gray;
+}
+
+th {
+  text-align: left;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  border-bottom: 2px solid lightgray;
+  cursor: pointer;
+  color: #bdc1c9;
+  position: relative;
+}
+
+.thActive {
+  border-color: tomato;
+}
+
+td {
+  font-size: 16px;
+  border: 1px solid lightgray;
+  padding: 5px;
+  font-weight: bold;
+}
+#main-title {
+  text-transform: uppercase;
+  font-size: 1em;
+  color: #8a909b;
+}
+i {
+  border: solid lightgray;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  position: absolute;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  bottom: 10px;
+}
+.up,
+.down {
+  right: 7px;
+}
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-bottom: 5px;
+}
+#add-group {
+  text-transform: uppercase;
+  background-color: #e0591a;
+  color: #fff;
+  border: none;
+  line-height: 30px;
+  height: 30px;
+  width: 180px;
+  cursor: pointer;
+}
+.top-section {
+  background-color: #e6e6e6;
+}
+#entries {
+  display: flex;
+  justify-content: space-between;
+  padding: 7px 0 20px 0;
+}
+#pagination {
+  display: flex;
+  justify-content: center;
+}
+.page-num {
+  width: 25px;
+  text-align: center;
+}
+.page-num:hover {
+  background-color: #e0591a;
+  cursor: pointer;
+  color: #fff;
+}
+.footer-section {
+  background-color: #e6e6e6;
+}
