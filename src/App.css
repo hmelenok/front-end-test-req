@@ -82,6 +82,7 @@ i {
   line-height: 30px;
   height: 30px;
   width: 180px;
+  cursor: pointer;
 }
 .top-section {
   background-color: #e6e6e6;
