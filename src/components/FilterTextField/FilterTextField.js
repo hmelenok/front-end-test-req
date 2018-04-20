@@ -16,16 +16,13 @@ class FilterTextField extends Component {
   }
   render() {
     return (
-      <div
-        style={{
-          padding: 10
-        }}
-      >
+      <div>
         <label style={{ display: "block" }}>Search</label>
         <input
           type="search"
           placeholder="Title, owner etc."
           onChange={this.handleTextChange}
+          style={{ border: "none", width: 200 }}
         />
       </div>
     );

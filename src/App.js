@@ -4,6 +4,7 @@ import "./App.css";
 import Table from "./components/Table/Table";
 import FilterTextField from "./components/FilterTextField/FilterTextField";
 import Button from "./components/Button/Button";
+import HeaderComponent from "./components/HeaderComponent/HeaderComponent";
 import { Provider } from "react-redux";
 import store from "./store";
 
@@ -70,9 +71,7 @@ class App extends Component {
     return (
       <Provider store={store}>
         <div>
-          <h1 id="main-title">Manage groups</h1>
-          <FilterTextField onTextChange={this.handleSearchChange} />
-          <Button />
+          <HeaderComponent />
           <Table
             data={data.filter(
               row => row.title.toLowerCase().indexOf(searchTerm) !== -1

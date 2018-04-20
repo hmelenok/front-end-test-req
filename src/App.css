@@ -68,3 +68,21 @@ i {
 .down {
   right: 7px;
 }
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-bottom: 5px;
+}
+#add-group {
+  text-transform: uppercase;
+  background-color: #e0591a;
+  color: #fff;
+  border: none;
+  line-height: 30px;
+  height: 30px;
+  width: 180px;
+}
+.top-section {
+  background-color: #ccc;
+}
