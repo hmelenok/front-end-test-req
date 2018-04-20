@@ -8,6 +8,8 @@ import HeaderComponent from "./components/HeaderComponent/HeaderComponent";
 import { Provider } from "react-redux";
 import store from "./store";
 import FooterComponent from "./components/FooterComponent/FooterComponent";
+import { fetchGroups } from "./actions/postActions";
+import { connect } from "react-redux";
 
 class App extends Component {
   constructor(props) {
@@ -86,4 +88,5 @@ class App extends Component {
   }
 }
 
+// export default connect(null, { fetchGroups })(App);
 export default App;

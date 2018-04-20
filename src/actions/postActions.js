@@ -1,6 +1,6 @@
 import { FETCH_GROUPS, NEW_GROUPS } from "./types";
 //function that would return another function with dispatch
-export const fetchPosts = () => dispatch => {
+export const fetchGroups = () => dispatch => {
   window
     .fetch("/groups-summary.json")
     .then(res => res.json())
