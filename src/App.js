@@ -7,6 +7,7 @@ import Button from "./components/Button/Button";
 import HeaderComponent from "./components/HeaderComponent/HeaderComponent";
 import { Provider } from "react-redux";
 import store from "./store";
+import FooterComponent from "./components/FooterComponent/FooterComponent";
 
 class App extends Component {
   constructor(props) {
@@ -78,6 +79,7 @@ class App extends Component {
             )}
             columns={columns}
           />
+          <FooterComponent />
         </div>
       </Provider>
     );

@@ -84,5 +84,26 @@ i {
   width: 180px;
 }
 .top-section {
-  background-color: #ccc;
+  background-color: #e6e6e6;
+}
+#entries {
+  display: flex;
+  justify-content: space-between;
+  padding: 7px 0 20px 0;
+}
+#pagination {
+  display: flex;
+  justify-content: center;
+}
+.page-num {
+  width: 25px;
+  text-align: center;
+}
+.page-num:hover {
+  background-color: #e0591a;
+  cursor: pointer;
+  color: #fff;
+}
+.footer-section {
+  background-color: #e6e6e6;
 }
