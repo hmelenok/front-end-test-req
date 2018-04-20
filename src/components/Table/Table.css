@@ -1,0 +1,10 @@
+#table {
+    width: 100%;
+}
+.tableTitleItem {
+    width: 20%;
+    color: #ccc;
+}
+.tableCellItem {
+    text-align: center;
+}
